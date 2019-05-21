@@ -1,0 +1,592 @@
+// rest
+html {
+  font-size: $htmlFontSize;
+}
+
+@include sectionHeaderLooping();
+.mrgin_buttom-sections {
+  margin-bottom: 6.6rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .media {
+    flex-direction: column;
+    img {
+      margin-bottom: 0.8rem;
+    }
+  }
+
+  footer.blockquote {
+    &:before {
+      width: 0.8rem;
+    }
+  }
+
+  .amazing-services {
+    i {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .latest-blog {
+    .card {
+      margin: 0 auto;
+      margin-bottom: 1rem;
+    }
+
+    .month-num {
+      top: 0% !important;
+      left: 0% !important;
+    }
+  }
+
+  .width-all-vw {
+    width: 100vw;
+  }
+
+  .title-subscribe {
+    margin: 0 auto;
+  }
+
+  .dispaly-sm-block {
+    span {
+      display: block !important;
+    }
+  }
+
+  .style-btn {
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+    font-size: 1rem;
+  }
+
+  .what-we-do-width {
+    width: 100vw;
+  }
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    display: none;
+  }
+}
+
+// Welcome to MoGo
+.welcome-to-mogo {
+  margin-bottom: 6.066rem;
+}
+.carousel-control-prev-icon {
+  background-image: url(../img/Welcome-to-mogo/arrow-left.png);
+  background-size: contain;
+}
+.carousel-control-next-icon {
+  background-image: url(../img/Welcome-to-mogo/arrow-right.png);
+  background-size: contain;
+}
+
+.fixed-top {
+  background-image: $overlayGradient;
+}
+@media only screen and (max-width: 768px) {
+  .style-in-tablt-mobile {
+    background-color: $whiteColor;
+    padding: 2rem;
+
+    li {
+      border-bottom: 1px solid $secondaryColors;
+      a {
+        color: $secondaryColors;
+      }
+      &.active {
+        a {
+          color: $yellowColor;
+        }
+      }
+    }
+  }
+}
+
+.navbar-brand {
+  color: $whiteColor;
+  @include useFont($Montserrat-Bold, 2rem, $whiteColor, bold);
+  &:hover {
+    color: $yellowColor;
+  }
+}
+.list-inline {
+  font-size: 1rem;
+}
+.style-font {
+  @include useFont($Montserrat-Regular, 1rem, $whiteColor, 400);
+}
+.style-ul-welcome {
+  li {
+    a {
+      color: $whiteColor;
+    }
+  }
+}
+.active {
+  a {
+    color: $yellowColor;
+  }
+
+  border-bottom: 2px solid $yellowColor;
+}
+.new-style-welcome {
+  div {
+    h3 {
+      font-size: 10rem;
+    }
+  }
+  .p-style-welcom-header {
+    font-size: 4.8rem;
+  }
+}
+.h3-style-welcom-header {
+  &:after {
+    border-bottom-color: white !important;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .new-style-welcome {
+    h3 {
+      font-size: 3rem !important ;
+    }
+  .welcom-inside-padding{
+    top: 12% !important;
+    
+  }  
+    .p-style-welcom-header {
+      font-size: 2rem;
+    }
+    .h3-style-welcom-header {
+      &:after {
+        border-bottom-color: white !important;
+      }
+    }
+  }
+}
+.welcom-inside-padding {
+  position: absolute;
+  top: 20%;
+  z-index: 3;
+  padding-left: 0;
+  width: 80%;
+}
+
+// marginb-abuot-us
+.marginb-abuot-us {
+  margin-bottom: 7.3333rem;
+  .on-hover-gredint {
+    width: calc(100% - 30px);
+    margin-left: 15px;
+    i {
+      top: 35%;
+      left: 20%;
+      font-size: 2rem;
+      position: absolute;
+      p {
+        @include useFont($Montserrat-Bold, 2rem, $whiteColor);
+      }
+    }
+  }
+}
+.marginb-header {
+  margin-bottom: 6.4666rem;
+}
+.on-hover-gredint {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: $overlayGradient;
+  display: none;
+}
+
+.yarb:hover {
+  .hover-img-welcome-to-mogo {
+    @include boxShadow(11px, 14px, 1px, 0px, $primaryColor);
+  }
+  .on-hover-gredint {
+    display: block;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  &:hover {
+    .yrab {
+      display: none;
+    }
+  }
+}
+// number of projects
+.number-of-projects {
+  background-color: $primaryColor;
+  margin-bottom: 7.3333rem;
+}
+@media only screen and (max-width: 1024px) {
+  .margin-in-samal-lag-number-of-projects {
+    margin-bottom: 1.2rem;
+  }
+}
+.column-no-5 > h4 {
+  font-weight: bold;
+  @include useFont($Montserrat-Bold, 4.8rem, $whiteColor);
+  p {
+    @include useFont($Montserrat-Regular, 0.93333rem, $whiteColor);
+    font-weight: normal;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .column-no-5 {
+    flex: 0 0 20%;
+    max-width: 20%;
+    padding: 0 1rem;
+  }
+}
+// Amazing Services
+
+.amazing-services-style {
+  color: $lightGreyText;
+  margin-bottom: 8rem;
+}
+
+.amazing-services-style-i-p {
+  i {
+    color: $primaryColor;
+    font-size: 2.9rem;
+  }
+  div {
+    h5 {
+      margin-bottom: 1.33rem;
+      @include useFont($Montserrat-Regular, 0.9333rem, $secondaryColors);
+    }
+    p {
+      margin-bottom: 1.33rem;
+      @include useFont($Roboto-Regular, 1rem, $lightGreyText);
+    }
+  }
+}
+
+// unique-design
+.unique-design {
+  @include bgImgProperties("../img/unique-design/background.jpg");
+}
+.position-style {
+  left: 44.6rem;
+  top: 15.5333333rem;
+}
+.unique-design-style {
+  padding-top: 7.333rem;
+  margin-bottom: 4rem;
+}
+@media only screen and (max-width: 1024px) {
+  .diplay-tablet {
+    display: none;
+  }
+  .position-style {
+    left: auto;
+    top: auto;
+    position: static !important;
+  }
+}
+// what we do
+.what-we-do {
+  margin-bottom: 8.13rem;
+}
+
+// six logos
+.six-logs {
+  background-color: $bgColorSections;
+  padding: 4rem 0 4rem 0;
+  margin-bottom: 7.3rem;
+}
+.card-header {
+  background-color: white;
+  button {
+    @include useFont($Montserrat-Regular, 1rem, $secondaryColors, 400);
+    i {
+      font-size: 2rem;
+      color: $primaryColor;
+    }
+
+    &:hover {
+      color: $yellowColor;
+    }
+  }
+}
+.card-body {
+  @include useFont($Roboto-LightItalic, 1rem, $lightGreyText);
+}
+.card-header {
+  padding: 0.59rem;
+}
+// Jon Doe
+.jon-doe {
+  background-color: $bgColorSections;
+  margin-bottom: 7.6rem;
+}
+.jon-doe-style {
+  i {
+    color: $primaryColor;
+    font-size: 1.3rem;
+    font-size: 4.5rem;
+  }
+}
+.after-name {
+  @include useFont($KaushanScript-Regular, 1.6rem, $secondaryColors);
+  &:before {
+    content: "";
+    display: inline-block;
+    border-bottom: 2px solid $redColor;
+    width: 4rem;
+    padding-right: 0.3rem;
+  }
+}
+.carousel-item.active {
+  border-bottom: none;
+}
+// Meet our team
+.meet-our-team {
+  margin-bottom: 7.8rem;
+  .image {
+    position: relative;
+  }
+}
+.icon-style-meet-our-team {
+  div {
+    position: absolute;
+    top: 49%;
+    left: 15%;
+    i {
+      background-color: $yellowColor;
+      color: $redColor;
+      font-size: 2rem;
+      &:hover {
+        background-color: $redColor;
+        color: $yellowColor;
+      }
+    }
+  }
+}
+figcaption {
+  h5 {
+    @include useFont($Montserrat-Regular, 0.933rem, $secondaryColors, 400);
+  }
+  p {
+    @include useFont($Roboto-LightItalic, 1rem, $lightGreyText);
+  }
+}
+// some-of-our-work
+.some-of-our-work {
+  margin-bottom: 6.8rem;
+}
+.What-people-say {
+  margin-bottom: 7.4666rem;
+  @include bgImgProperties("../img/What-people-say/happy-clients.png");
+  .bg-padding {
+    padding: 7.333rem 0 8.533rem 0;
+    div {
+      div {
+        div {
+          div {
+            h5 {
+              @include useFont(
+                $Montserrat-Regular,
+                0.933rem,
+                $secondaryColors,
+                400
+              );
+              p {
+                @include useFont($Roboto-LightItalic, 1rem, $secondaryColors);
+              }
+            }
+            p {
+              @include useFont($Roboto-Regular, 1rem, $lightGreyText);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.media-body {
+  h5 {
+    p {
+      &:after {
+        content: "";
+        display: block;
+        border-bottom: 2px solid $redColor;
+        width: 4rem;
+        padding-top: 1.5rem;
+      }
+    }
+  }
+}
+// // block quote
+.block-quote {
+  margin-bottom: 8.6rem;
+  div {
+    div {
+      div {
+        div {
+          blockquote {
+            p {
+              @include useFont($Roboto-LightItalic, 1rem, $lightGreyText);
+            }
+            footer {
+              @include useFont(
+                $KaushanScript-Regular,
+                1.6rem,
+                $secondaryColors
+              );
+              &:before {
+                content: "";
+                display: inline-block;
+                border-bottom: 2px solid $redColor;
+                width: 4rem;
+                margin-right: 0.5rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// last blog
+.latest-blog {
+  margin-bottom: 8rem;
+}
+.card-body {
+  h5 {
+    @include useFont($Montserrat-Regular, 1rem, $secondaryColors);
+  }
+  p {
+    @include useFont($Roboto-Regular, 1rem, $lightGreyText);
+  }
+  div {
+    small {
+      @include useFont($Roboto-LightItalic, 1rem, $lightGreyText);
+      i {
+        color: $primaryColor;
+        font-size: 1rem;
+      }
+    }
+  }
+}
+.style-card {
+  position: relative;
+}
+.month-num {
+  // top: 9.5333rem;
+  // right: 20.266rem;
+  top: 33%;
+  left: -3%;
+  padding: 10px;
+  position: absolute;
+  background-color: $primaryColor;
+  @include useFont($Montserrat-Bold, 2rem, $whiteColor, bold);
+  p {
+    @include useFont($Roboto-LightItalic, 1rem, $whiteColor);
+  }
+}
+
+// open-map
+.open-map {
+  @include bgImgProperties("../img/open-map.jpg");
+  margin-bottom: 5.333rem;
+
+  .padding-open-map {
+    padding: 3.8rem 0;
+    i {
+      font-size: 2rem;
+      color: $redColor;
+    }
+    h5 {
+      @include useFont($Montserrat-Bold, 1.5rem, $redColor, bold);
+      &:after {
+        content: "";
+        display: block;
+        margin: 0 auto;
+        border-bottom: 3px solid $redColor;
+        width: 4rem;
+        padding-top: 1.2rem;
+      }
+    }
+  }
+}
+// footer
+.card-title {
+  @include useFont($Montserrat-Bold, 3.0555rem, #757575, bold);
+}
+.card-text {
+  @include useFont($Roboto-Regular, 1rem, $lightGreyText);
+}
+.new-style-car-footer {
+  @include useFont($Montserrat-Regular, 1rem, $lightGreyText, 400);
+  span {
+    @include useFont($Montserrat-Bold, 1.2rem, $secondaryColors, bold);
+  }
+}
+.card-footer {
+  span {
+    @include useFont($Roboto-LightItalic, 1rem, $lightGreyText);
+  }
+  i {
+    color: $primaryColor;
+  }
+}
+.copy-rights {
+  p {
+    @include useFont($Montserrat-Regular, 1rem, $secondaryColors, 400);
+    span {
+      color: $redColor;
+    }
+  }
+}
+.input-group {
+  input[type="text"]::placeholder {
+    @include useFont($Roboto-LightItalic, 1rem, $lightGreyText);
+  }
+}
+.style-btn {
+  background-color: $primaryColor;
+  padding-right: 3rem;
+  padding-left: 3rem;
+  @include useFont($Montserrat-Bold, 1rem, $whiteColor, bold);
+}
+
+// subscribe form
+.title-subscribe {
+  h6 {
+    @include useFont($Montserrat-Regular, 1rem, $secondaryColors, 400);
+  }
+}
+form {
+  label {
+    @include useFont($Montserrat-Regular, 1rem, $secondaryColors, 400);
+  }
+  input[type="text"]::placeholder {
+    @include useFont($Roboto-LightItalic, 1rem, $lightGreyText);
+  }
+  input[type="email"]::placeholder {
+    @include useFont($Roboto-LightItalic, 1rem, $lightGreyText);
+  }
+  .btn {
+    background-color: $primaryColor;
+    color: $whiteColor;
+  }
+}
+
+// footer img
+.insta-imgs-sec {
+  @include grid(1fr 1fr 1fr, center, center, 0.5em);
+  @include instgramImg();
+}
+.insta-img {
+  width: 88px;
+  height: 88px;
+}

@@ -1,0 +1,34 @@
+
+// section about us
+%sectionHeaderStyle{
+  
+        h3{
+            @include useFont($Montserrat-Bold,2rem,$secondaryColors);
+            margin-bottom: 2.6rem;
+            p{
+                @include useFont($KaushanScript-Regular,1.6rem,$secondaryColors);
+                margin-bottom: 1.6rem;
+                font-weight: 400;
+                text-transform:lowercase;
+            }
+            &:after {
+                content: "";
+                display: block;
+                border-bottom: 2px solid $redColor;
+                width: 4rem;
+                margin: 0 auto;
+                padding-top: 1.5rem;
+            }
+        }
+        h6{
+            @include useFont($Roboto-Regular,1rem,$lightGreyText);
+            
+        }
+       
+    }
+
+         
+    %bgImg-properties{
+        background-repeat: no-repeat;
+        background-size: cover;
+    } 
